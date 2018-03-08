@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_CROWDFUNDINGDETAILSBAR</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2017 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>1.0</version>
+    <creationDate>23 February, 2017</creationDate>
+    <description><![CDATA[
+    <p>Crowdfunding - Details Bar is a plugin that adds additional information about a campaign on its details page.</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <help url="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_HELP_URL"/>
+    
+    <files>
+        <filename plugin="crowdfundingdetailsbar">crowdfundingdetailsbar.php</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="position" type="list" default="before_content" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_POSITION" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_POSITION_DESC" class="btn-group">
+                    <option value="before_content">PLG_CONTENT_CROWDFUNDINGDETAILSBAR_BEFORE_CONTENT</option>
+                    <option value="after_media">PLG_CONTENT_CROWDFUNDINGDETAILSBAR_AFTER_MEDIA</option>
+                    <option value="after_content">PLG_CONTENT_CROWDFUNDINGDETAILSBAR_AFTER_CONTENT</option>
+                </field>
+                <field name="show_title" type="radio" default="1" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_TITLE" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_TITLE_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+				<field name="show_category" type="radio" default="1" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_CATEGORY" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_CATEGORY_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="show_type" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_TYPE" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_TYPE_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="show_country" type="radio" default="1" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_COUNTRY" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_COUNTRY_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_region" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_REGION" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_REGION_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="show_location" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_LOCATION" description="PLG_CONTENT_CROWDFUNDINGDETAILSBAR_SHOW_LOCATION_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+			</fieldset>
+        </fields>
+	</config>
+</extension>
